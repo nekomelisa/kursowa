@@ -61,7 +61,7 @@ def print_and_plot(labels, group_tags, method_name):
     plt.show()
 
 if __name__ == '__main__':
-    with open('sim_matrices_3.pkl','rb') as f:
+    with open('sim_matrices.pkl','rb') as f:
         data = pickle.load(f)
 
     S_bc, S_ctrl, S_cross = data['S_bc'], data['S_ctrl'], data['S_cross']
