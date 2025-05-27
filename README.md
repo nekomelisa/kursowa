@@ -20,9 +20,10 @@
 Варіант 2.
 
 Натиснути на зелену кнопочку 
+
 <img width="116" alt="Screenshot 2025-05-27 at 1 08 37 PM" src="https://github.com/user-attachments/assets/10d3c8d8-947a-400e-a47a-ed47f41f9cc9" />
 
-
+Та обрати там варіант "Download ZIP". 
 
 
 
