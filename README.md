@@ -1,35 +1,24 @@
 # Курсова
 Реалізація коду для курсової роботи
 
-Результати (найкращі):
+Для виконанання коду необхідні наступні бібліотеки:
 
-===== CHANNEL: Blue =====
+- numpy
+- matplotlib
+- pickle
+- collections
+- scikit-learn
+- pathlib
+  
+Рекомендована стурктура проєкту:
+Проєкт
+├── data
+│   ├── BC
+│   └── Control
+└── src
+    ├── cluster_analysis.py
+    ├── colour_claster.py
+    └── compute_similarity.py
 
-SpectralClustering — channel=Blue
 
- Cluster 0: BC= 18, Control= 29
- 
- Cluster 1: BC= 50, Control=  0
- 
- Sensitivity: 0.735, Specificity: 1.000
-
-===== CHANNEL: Green =====
-
-SpectralClustering — channel=Green
-
- Cluster 0: BC= 59, Control=  1
- 
- Cluster 1: BC=  9, Control= 28
- 
- Sensitivity: 0.868, Specificity: 0.966
-
-===== CHANNEL: Red =====
-
-SpectralClustering — channel=Red
-
- Cluster 0: BC= 52, Control=  0
- 
- Cluster 1: BC= 16, Control= 29
- 
- Sensitivity: 0.765, Specificity: 1.000
-
+В файлі compute_similarity.py в 46 рядку змінити шлях до папки data. Після цього можна запустити для виконання цей файл, а опісля файл cluster_analysis.py, який аналізує всю матрицю схожості. Файл colour_clusters.py можна запускати незалежно від інших, він аналізує кольорові канали по окремості. 
