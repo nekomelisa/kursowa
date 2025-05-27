@@ -12,12 +12,19 @@
   
 Рекомендована стурктура проєкту:
 Проєкт
+
 ├── data
+
 │   ├── BC
+
 │   └── Control
+
 └── src
+
     ├── cluster_analysis.py
+    
     ├── colour_claster.py
+    
     └── compute_similarity.py
 
 
