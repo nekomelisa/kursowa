@@ -43,7 +43,7 @@ def compute_p_statistic(x_sorted, y, g=3):
 
 if __name__ == "__main__":
 
-    project_root = Path("/Users/nekomelisa/Documents/jez/code/data").parent
+    project_root = Path(".../data").parent #тут розмістіть шлях до папки data, яка містить в собі дві папки - BC та control
     data_root = project_root / "data"
 
     data = load_data(data_root)
@@ -75,12 +75,12 @@ if __name__ == "__main__":
     S_ctrl = np.zeros((m_ctrl, m_ctrl), dtype=float)
     for i in range(m_ctrl):
         for j in range(m_ctrl):
-            S_ctrl[i, j] = compute_p_statistic(ctrl_list[i], ctrl_list[j], g=1.96)
+            S_ctrl[i, j] = compute_p_statistic(ctrl_list[i], ctrl_list[j], g=3)
 
     S_cross = np.zeros((n_bc, m_ctrl), dtype=float)
     for i in range(n_bc):
         for j in range(m_ctrl):
-            S_cross[i, j] = compute_p_statistic(bc_list[i], ctrl_list[j], g=1.96)
+            S_cross[i, j] = compute_p_statistic(bc_list[i], ctrl_list[j], g=3)
 
     payload = {
         "S_bc": S_bc,
