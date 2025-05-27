@@ -43,7 +43,7 @@ def compute_p_statistic(x_sorted, y, g=3):
 
 if __name__ == "__main__":
 
-    project_root = Path("/Users/nekomelisa/Documents/jez/code/data").parent
+    project_root = Path(".../data").parent #тут розмістіть шлях до папки data, яка містить в собі дві папки - BC та control
     data_root = project_root / "data"
 
     data = load_data(data_root)
