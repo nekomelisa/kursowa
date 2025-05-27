@@ -23,7 +23,8 @@
 
 Натиснути на зелену кнопочку 
 
-<img width="116" alt="Screenshot 2025-05-27 at 1 08 37 PM" src="https://github.com/user-attachments/assets/10d3c8d8-947a-400e-a47a-ed47f41f9cc9" />
+<img width="899" alt="Screenshot 2025-05-27 at 1 19 19 PM" src="https://github.com/user-attachments/assets/5835afdf-176e-42a4-b7b8-b79e2540d555" />
+
 
 Та обрати там варіант "Download ZIP". 
 
