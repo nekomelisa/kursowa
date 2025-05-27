@@ -8,7 +8,6 @@ from sklearn.manifold import MDS
 from sklearn.metrics import confusion_matrix
 
 def print_and_plot(labels, group_tags, method_name):
-    # Count BC/Control in each cluster
     counts = defaultdict(Counter)
     for lbl, tag in zip(labels, group_tags):
         counts[lbl][tag] += 1
@@ -18,10 +17,8 @@ def print_and_plot(labels, group_tags, method_name):
         bc_c, ctrl_c = counts[cid]['BC'], counts[cid]['Control']
         print(f'Cluster {cid}:  BC={bc_c:3d},  Control={ctrl_c:3d}')
 
-    # true labels
     y_true = np.array([1 if tag=='BC' else 0 for tag in group_tags])
 
-    # try both possible mappings of cluster IDs → {0,1}
     best_mapping = None
     best_bal_acc = -1
     best_metrics = None
@@ -67,7 +64,6 @@ if __name__ == '__main__':
     S_bc, S_ctrl, S_cross = data['S_bc'], data['S_ctrl'], data['S_cross']
     bc_labels, ctrl_labels = data['bc_labels'], data['ctrl_labels']
 
-    # build distance & affinity
     S_all = np.vstack([
         np.hstack([S_bc,    S_cross]),
         np.hstack([S_cross.T, S_ctrl])
